@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+.boarder{
+    background-color: #ff1d58;
+    border-radius: 25px;
+    max-width: 800px;
+    margin: auto;
+}
+body{
+    background-color: #fff685;
+}
+.tuner{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.string{
+    font-size: 50px;
+}
