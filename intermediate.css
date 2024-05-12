@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+}
+.boarder{
+    padding: 1em;
+    background-color:#7b4334;
+    border-radius: 25px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 5px -5px 5px 0px #002622, -5px 10px 5px 0px #002622;
+}
+body{
+    background-color:#644346;
+}
+p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+}
+.tuner{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #17243e;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 5px -5px 5px 0px #0d324b, -5px 10px 5px 0px #0d324b;
+}
+.sound{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr{
+    border: 0;
+}
