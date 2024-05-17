@@ -19,10 +19,10 @@ p{
     font-size: 26px;
 }
 .tuner{
-    display: flex;
+    display:flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
     background-color: #DD5746;
     border-radius: 20px;
     max-width: 800px;
@@ -39,4 +39,7 @@ p{
 }
 hr{
     border: 0;
+}
+.resetButton{
+    text-align: center;
 }
