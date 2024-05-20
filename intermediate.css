@@ -40,6 +40,7 @@ p{
 hr{
     border: 0;
 }
-.resetButton{
-    text-align: center;
+.Chords{
+    display: flex;
+    justify-content: center;
 }
