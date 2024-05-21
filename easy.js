@@ -5,7 +5,7 @@ function playSound(soundFile) {
 }
 
 //Event listener For C Button
-document.getElementById('string1').addEventListener('click', () => {
+document.getElementById('string1').addEventListener('click', () =>  {
     playSound('sounds/C.mp3'); 
 });
 
@@ -22,4 +22,9 @@ document.getElementById('string3').addEventListener('click', () => {
 //Event Listener for F Button
 document.getElementById('string4').addEventListener('click', () => {
     playSound('sounds/F.mp3'); 
+});
+
+//Event Listener for G Button
+document.getElementById('string5').addEventListener('click', () => {
+    playSound('sounds/G.mp3'); 
 });
