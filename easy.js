@@ -5,7 +5,7 @@ function playSound(soundFile) {
 }
 
 //Event listener For C Button
-document.getElementById('string1').addEventListener('click', () =>  {
+document.getElementById('string1').addEventListener('click', () => {
     playSound('sounds/C.mp3'); 
 });
 
