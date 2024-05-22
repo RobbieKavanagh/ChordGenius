@@ -33,3 +33,8 @@ document.getElementById('string5').addEventListener('click', () => {
 document.getElementById('string6').addEventListener('click', () => {
     playSound('sounds/A.mp3'); 
 });
+
+//Event Listener for B Button
+document.getElementById('string7').addEventListener('click', () => {
+    playSound('sounds/B.mp3'); 
+});
