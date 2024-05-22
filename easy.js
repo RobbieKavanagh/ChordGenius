@@ -28,3 +28,8 @@ document.getElementById('string4').addEventListener('click', () => {
 document.getElementById('string5').addEventListener('click', () => {
     playSound('sounds/G.mp3'); 
 });
+
+//Event Listener for A Button
+document.getElementById('string6').addEventListener('click', () => {
+    playSound('sounds/A.mp3'); 
+});
