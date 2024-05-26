@@ -51,4 +51,39 @@ hr{
     display: flex;
     justify-content: center;
     opacity: .6;
+}#link2{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color:#FFC470;
+    color: black;
+    border: none;
+    transition-duration: 0.4s;
+    font-family: "Poppins";
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+#link2:hover{
+    background-color: #DD5746;
+    color: white;
+    cursor: pointer;
+}
+#link1{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color:#FFC470;
+    color: black;
+    border: none;
+    transition-duration: 0.4s;
+    font-family: "Poppins";
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+#link1:hover{
+    background-color: #DD5746;
+    color: white;
+    cursor: pointer;
 }
