@@ -11,12 +11,19 @@ h1{
     margin: auto;
 }
 body{
-    background-color:#4793AF;
+    background-image:url("images/Guitar.jpeg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: 0%;
 }
 p{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 26px;
+}
+.how{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .tuner{
     display:flex;
@@ -43,4 +50,5 @@ hr{
 .Chords{
     display: flex;
     justify-content: center;
+    opacity: .6;
 }
