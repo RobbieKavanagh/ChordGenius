@@ -1,13 +1,14 @@
-# 🎸TuneGenius
+# 🎸ChordGenius
 
 ### Overview
-Welcome to TuneGenius! TuneGenius is a guitar tuner for standard tuning(E,A,D,G,B,E). It will play the sound that the corresponding string should sound like. You strum along until your string sounds the same as TuneGenius!
+Welcome to ChordGenius! ChordGenius started out as a guitar tuner. But going through this project my coach Gillian and I decided it would be much better used as a tool to help people learn basic chords for guitar. The concept is that you pick up your guitar, click on the Chord and play along with the corrosponding chord with the attached diagram.
 
 ### Purpose
-The purpose of TuneGenius is to keep your guitar in tune from day to day. Just open the site and tune along. Then you can go and play whatever music you are into!
+The purpose of ChordGenius is to help anyone pick up a guitar and learn basic guitar chords.
 
 ## Inspiration 💡
-I've been passionate about music my whole life. I started playing guitar when I was about 16. I was always misplacing my tuner. So I decided to make this to be able to use a tuner online.
+I've been passionate about music my whole life. I started playing guitar when I was about 16. I think this would be something simple enough for anyone to pick up a guitar and learn some basic chords.
+
 ## Built with 💻
 - HTML
 - CSS
