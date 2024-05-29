@@ -2,6 +2,7 @@ h1{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
+    margin-top: 40px;
 }
 .boarder{
     padding: 1em;
@@ -87,4 +88,19 @@ p{
     background-color: #DD5746;
     color: white;
     cursor: pointer;
+}
+.footer{
+    display: flex;
+   justify-content: flex-end;
+   background-color:#FFC470;
+   color: black;
+   padding: 10px 15px;
+   font-weight: 600;
+   font-size: small;
+   width: 100%;
+   position: fixed;
+   bottom: 0px;
+   right: 0;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   opacity: .8;
 }
