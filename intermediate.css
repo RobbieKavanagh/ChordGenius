@@ -68,6 +68,7 @@ hr{
     top: 40px;
     right: 20px;
     opacity: .8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #link2:hover{
     background-color: #DD5746;
@@ -88,6 +89,7 @@ hr{
     top: 40px;
     left: 20px;
     opacity: .8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #link1:hover{
     background-color: #DD5746;
