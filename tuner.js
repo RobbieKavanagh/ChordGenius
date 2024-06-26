@@ -14,4 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { note: 'E', frequency: 329.63 }
     ];
 
+//Variables for Audio
+let audioContext, analyser, microphone, javascriptNode;
+
+startButton.addEventListener('click', startTuning);
+stopButton.addEventListener('click', stopTuning);
+
 
