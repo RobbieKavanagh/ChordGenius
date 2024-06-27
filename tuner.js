@@ -28,21 +28,29 @@ function startTuning() {
 
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
-            microphone = audioContext.createMediaStreamSource(stream);
-            javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
+        microphone = audioContext.createMediaStreamSource(stream);
+        javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
 
-            microphone.connect(analyser);
-            analyser.connect(javascriptNode);
-            javascriptNode.connect(audioContext.destination);
+        microphone.connect(analyser);
+        analyser.connect(javascriptNode);
+        javascriptNode.connect(audioContext.destination);
 
-            javascriptNode.onaudioprocess = function() {
-                const array = new Uint8Array(analyser.frequencyBinCount);
-                analyser.getByteFrequencyData(array);
+        javascriptNode.onaudioprocess = function() {
+            const array = new Uint8Array(analyser.frequencyBinCount);
+            analyser.getByteFrequencyData(array);
 
-                const maxIndex = array.reduce((maxIndex, value, index, arr) => value > arr[maxIndex] ? index : maxIndex, 0);
-                const frequency = maxIndex * audioContext.sampleRate / analyser.fftSize;
+            const maxIndex = array.reduce((maxIndex, value, index, arr) => value > arr[maxIndex] ? index : maxIndex, 0);
+            const frequency = maxIndex * audioContext.sampleRate / analyser.fftSize;
 
-                const closestNote = findClosestNote(frequency);
-                noteDisplay.textContent = `Note: ${closestNote.note}`;
+            const closestNote = findClosestNote(frequency);
+            noteDisplay.textContent = `Note: ${closestNote.note}`;
             };
 
+//Disable start button and and enables stop button            
+            startButton.disabled = true;
+            stopButton.disabled = false;
+        })
+        .catch(err => {
+            console.error('Error accessing microphone:', err);
+        });
+}
