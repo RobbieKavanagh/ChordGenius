@@ -20,4 +20,29 @@ let audioContext, analyser, microphone, javascriptNode;
 startButton.addEventListener('click', startTuning);
 stopButton.addEventListener('click', stopTuning);
 
+//Function to start the Tuner
+function startTuning() {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    analyser = audioContext.createAnalyser();
+    analyser.fftSize = 2048;
+
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => {
+            microphone = audioContext.createMediaStreamSource(stream);
+            javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
+
+            microphone.connect(analyser);
+            analyser.connect(javascriptNode);
+            javascriptNode.connect(audioContext.destination);
+
+            javascriptNode.onaudioprocess = function() {
+                const array = new Uint8Array(analyser.frequencyBinCount);
+                analyser.getByteFrequencyData(array);
+
+                const maxIndex = array.reduce((maxIndex, value, index, arr) => value > arr[maxIndex] ? index : maxIndex, 0);
+                const frequency = maxIndex * audioContext.sampleRate / analyser.fftSize;
+
+                const closestNote = findClosestNote(frequency);
+                noteDisplay.textContent = `Note: ${closestNote.note}`;
+            };
 
