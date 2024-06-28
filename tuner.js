@@ -54,3 +54,18 @@ function startTuning() {
             console.error('Error accessing microphone:', err);
         });
 }
+
+//Function to stop tuner
+function stopTuning() {
+    if (microphone && javascriptNode) {
+        microphone.disconnect();
+        javascriptNode.disconnect();
+        audioContext.close();
+
+        noteDisplay.textContent = 'Note: --';
+
+        startButton.disabled = false;
+        stopButton.disabled = true;
+    }
+}
+
