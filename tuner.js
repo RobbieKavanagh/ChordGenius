@@ -69,3 +69,9 @@ function stopTuning() {
     }
 }
 
+//Function to find closest note to sound    
+function findClosestNote(frequency) {
+    return notes.reduce((prev, curr) => Math.abs(curr.frequency - frequency) < Math.abs(prev.frequency - frequency) ? curr : prev);
+}
+});
+
